@@ -31,6 +31,11 @@ jobs:
         mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
         echo $content | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
+    - name: Check MyGet nuget-build
+      run: |-
+        mkdir -p dotnet.myget.org/F/nuget-build/api/v3
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://dotnet.myget.org/F/nuget-build/api/v3/index.json)
+        echo $content | jq . > dotnet.myget.org/F/nuget-build/api/v3/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
