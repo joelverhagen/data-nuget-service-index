@@ -29,7 +29,7 @@ jobs:
     - name: Check Azure DevOps nuget-build
       run: |-
         mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
-        content=$(curl https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
+        content=$(curl https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v4/index.json)
         echo $content | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
     - name: Commit and push data has changed
       run: |-
