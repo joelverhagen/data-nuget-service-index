@@ -1,13 +1,10 @@
 # Periodically checks the nuget.org V3 service index for changes.
 # Inspired by https://simonwillison.net/2020/Oct/9/git-scraping/
 
-name: Update data
+name: Update data (test)
 
 on:
-  push:
   workflow_dispatch:
-  schedule:
-    - cron: '11 * * * *'
 
 jobs:
   scheduled:
@@ -17,15 +14,23 @@ jobs:
     - name: Check PROD
       run: |-
         mkdir -p api.nuget.org/v3
-        curl https://api.nuget.org/v3/index.json | jq . > api.nuget.org/v3/index.json
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://api.nuget.org/v3/index.json)
+        echo $content | jq . > api.nuget.org/v3/index.json
     - name: Check INT
       run: |-
         mkdir -p apiint.nugettest.org/v3
-        curl https://apiint.nugettest.org/v3/index.json | jq . > apiint.nugettest.org/v3/index.json
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://apiint.nugettest.org/v3/index.json)
+        echo $content | jq . > apiint.nugettest.org/v3/index.json
     - name: Check DEV
       run: |-
         mkdir -p apidev.nugettest.org/v3
-        curl https://apidev.nugettest.org/v3/index.json | jq . > apidev.nugettest.org/v3/index.json
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://apidev.nugettest.org/v3/index.json)
+        echo $content | jq . > apidev.nugettest.org/v3/index.json
+    - name: Check Azure DevOps nuget-build
+      run: |-
+        mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
+        echo $content | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
