@@ -17,27 +17,32 @@ jobs:
       run: |-
         mkdir -p api.nuget.org/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://api.nuget.org/v3/index.json)
-        echo $content | jq . > api.nuget.org/v3/index.json
+        echo "$content" | jq . > api.nuget.org/v3/index.json
     - name: Check INT
       run: |-
         mkdir -p apiint.nugettest.org/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://apiint.nugettest.org/v3/index.json)
-        echo $content | jq . > apiint.nugettest.org/v3/index.json
+        echo "$content" | jq . > apiint.nugettest.org/v3/index.json
     - name: Check DEV
       run: |-
         mkdir -p apidev.nugettest.org/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://apidev.nugettest.org/v3/index.json)
-        echo $content | jq . > apidev.nugettest.org/v3/index.json
+        echo "$content" | jq . > apidev.nugettest.org/v3/index.json
     - name: Check Azure DevOps nuget-build
       run: |-
         mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
-        echo $content | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
+        echo "$content" | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
     - name: Check MyGet nuget-build
       run: |-
         mkdir -p dotnet.myget.org/F/nuget-build/api/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://dotnet.myget.org/F/nuget-build/api/v3/index.json)
-        echo $content | jq . > dotnet.myget.org/F/nuget-build/api/v3/index.json
+        echo "$content" | jq . > dotnet.myget.org/F/nuget-build/api/v3/index.json
+    - name: Check GitHub joelverhagen
+      run: |-
+        mkdir -p nuget.pkg.github.com/joelverhagen
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused --basic --user user:password https://nuget.pkg.github.com/joelverhagen/index.json)
+        echo "$content" | jq . > nuget.pkg.github.com/joelverhagen/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
