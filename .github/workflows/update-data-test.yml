@@ -26,11 +26,11 @@ jobs:
         mkdir -p apidev.nugettest.org/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://apidev.nugettest.org/v3/index.json)
         echo $content | jq . > apidev.nugettest.org/v3/index.json
-    - name: Check Azure DevOps nuget-build
+    - name: Check GitHub joelverhagen
       run: |-
-        mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
-        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
-        echo $content | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
+        mkdir -p nuget.pkg.github.com/joelverhagen
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused --basic --user user:password https://nuget.pkg.github.com/joelverhagen/index.json)
+        echo $content | jq . > nuget.pkg.github.com/joelverhagen/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
