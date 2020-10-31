@@ -39,4 +39,4 @@ jobs:
         git add -A
         timestamp=$(date --iso-8601=seconds)
         git commit -m "Latest data: ${timestamp}" || exit 0
-        git push origin test --force-with-lease
+        git push origin test --force
