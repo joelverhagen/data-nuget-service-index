@@ -43,6 +43,11 @@ jobs:
         mkdir -p nuget.pkg.github.com/joelverhagen
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused --basic --user user:password https://nuget.pkg.github.com/joelverhagen/index.json)
         echo "$content" | jq . > nuget.pkg.github.com/joelverhagen/index.json
+    - name: Check Cloudsmith joelverhagen
+      run: |-
+        mkdir -p nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json)
+        echo "$content" | jq . > nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
