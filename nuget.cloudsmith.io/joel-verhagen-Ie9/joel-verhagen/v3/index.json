@@ -1,0 +1,122 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/catalog0/index.json",
+      "@type": "Catalog/3.0.0",
+      "comment": "Index of the NuGet package catalog."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v2/",
+      "@type": "LegacyGallery"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v2/",
+      "@type": "LegacyGallery/2.0.0"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3-flatcontainer/",
+      "@type": "PackageBaseAddress/3.0.0",
+      "comment": "Base URL of where NuGet packages are stored, in the format {@id}{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
+    },
+    {
+      "@id": "https://cloudsmith.io/~joel-verhagen-Ie9/repos/joel-verhagen/packages/detail/nuget/{id-lower}/{version-lower}/",
+      "@type": "PackageDetailsUriTemplate/5.1.0",
+      "comment": "URI template used by NuGet Client to construct details URL for packages"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v2/package",
+      "@type": "PackagePublish/2.0.0",
+      "comment": "The gallery package publish endpoint."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3/",
+      "@type": "RegistrationsBaseUrl",
+      "comment": "Base URL of storage where NuGet package registration info is stored."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3/",
+      "@type": "RegistrationsBaseUrl/3.0.0-rc",
+      "comment": "Base URL of storage where NuGet package registration info is stored used by RC clients. This base URL does not include SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3/",
+      "@type": "RegistrationsBaseUrl/3.0.0-beta",
+      "comment": "Base URL of storage where NuGet package registration info is stored used by Beta clients. This base URL does not include SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3-gz/",
+      "@type": "RegistrationsBaseUrl/3.4.0",
+      "comment": "Base URL of storage where NuGet package registration info is stored in GZIP format. This base URL does not include SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3-gz-semver2/",
+      "@type": "RegistrationsBaseUrl/3.6.0",
+      "comment": "Base URL of storage where NuGet package registration info is stored in GZIP format. This base URL includes SemVer 2.0.0 packages."
+    },
+    {
+      "@id": "https://cloudsmith.io/~joel-verhagen-Ie9/repos/joel-verhagen/packages/detail/nuget/{id-lower}/{version-lower}/",
+      "@type": "ReportAbuseUriTemplate/3.0.0",
+      "comment": "URI template used by NuGet Client to construct abuse URL for packages"
+    },
+    {
+      "@id": "https://cloudsmith.io/~joel-verhagen-Ie9/repos/joel-verhagen/packages/detail/nuget/{id-lower}/{version-lower}/",
+      "@type": "ReportAbuseUriTemplate/3.0.0-beta",
+      "comment": "URI template used by NuGet Client to construct abuse URL for packages"
+    },
+    {
+      "@id": "https://cloudsmith.io/~joel-verhagen-Ie9/repos/joel-verhagen/packages/detail/nuget/{id-lower}/{version-lower}/",
+      "@type": "ReportAbuseUriTemplate/3.0.0-rc",
+      "comment": "URI template used by NuGet Client to construct abuse URL for packages"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3-index/repository-signatures/4.7.0/index.json",
+      "@type": "RepositorySignatures/4.7.0",
+      "comment": "The endpoint for discovering information about this package source's repository signatures."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3-index/repository-signatures/5.0.0/index.json",
+      "@type": "RepositorySignatures/5.0.0",
+      "comment": "The endpoint for discovering information about this package source's repository signatures."
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/autocomplete",
+      "@type": "SearchAutocompleteService",
+      "comment": "Autocomplete endpoint of NuGet Search service"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-rc",
+      "comment": "Autocomplete endpoint of NuGet Search service used by RC clients"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-beta",
+      "comment": "Autocomplete endpoint of NuGet Search service used by Beta clients"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/query",
+      "@type": "SearchQueryService",
+      "comment": "Query endpoint of NuGet Search service"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/query",
+      "@type": "SearchQueryService/3.0.0-rc",
+      "comment": "Query endpoint of NuGet Search service used by RC clients"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/search/query",
+      "@type": "SearchQueryService/3.0.0-beta",
+      "comment": "Query endpoint of NuGet Search service used by Beta clients"
+    },
+    {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v2/symbolpackage",
+      "@type": "SymbolPackagePublish/4.9.0",
+      "comment": "The gallery symbol package publish endpoint."
+    }
+  ],
+  "@context": {
+    "@vocab": "http://schema.nuget.org/services#",
+    "comment": "http://www.w3.org/2000/01/rdf-schema#comment"
+  }
+}
