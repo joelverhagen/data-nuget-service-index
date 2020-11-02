@@ -24,3 +24,16 @@ and MyGet.
 ## MyGet nuget-build 
 
 [History](dotnet.myget.org/F/nuget-build/api/v3/index.json) ([original endpoint](https://dotnet.myget.org/F/nuget-build/api/v3/index.json))
+
+## BaGet (test)
+
+[History](bagettest.azurewebsites.net/v3/index.json)
+
+## GitHub (joelverhagen)
+
+[History](nuget.pkg.github.com/joelverhagen/index.json) ([original endpoint](https://nuget.pkg.github.com/joelverhagen/index.json))
+
+## Cloudsmith (joel-verhagen)
+
+[History](nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json) ([original endpoint](https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json))
+
