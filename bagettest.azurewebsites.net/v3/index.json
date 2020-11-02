@@ -1,0 +1,53 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://bagettest.azurewebsites.net/api/v2/package",
+      "@type": "PackagePublish/2.0.0"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/api/v2/symbol",
+      "@type": "SymbolPackagePublish/4.9.0"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/search",
+      "@type": "SearchQueryService"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/search",
+      "@type": "SearchQueryService/3.0.0-beta"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/search",
+      "@type": "SearchQueryService/3.0.0-rc"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/registration",
+      "@type": "RegistrationsBaseUrl"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/registration",
+      "@type": "RegistrationsBaseUrl/3.0.0-rc"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/registration",
+      "@type": "RegistrationsBaseUrl/3.0.0-beta"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/package",
+      "@type": "PackageBaseAddress/3.0.0"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/autocomplete",
+      "@type": "SearchAutocompleteService"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-rc"
+    },
+    {
+      "@id": "https://bagettest.azurewebsites.net/v3/autocomplete",
+      "@type": "SearchAutocompleteService/3.0.0-beta"
+    }
+  ]
+}
