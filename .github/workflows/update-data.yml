@@ -48,6 +48,11 @@ jobs:
         mkdir -p nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json)
         echo "$content" | jq . > nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/index.json
+    - name: Check test BaGet
+      run: |-
+        mkdir -p bagettest.azurewebsites.net/v3
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://bagettest.azurewebsites.net/v3/index.json)
+        echo "$content" | jq . > bagettest.azurewebsites.net/v3/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
