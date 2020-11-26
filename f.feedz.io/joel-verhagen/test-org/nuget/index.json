@@ -1,0 +1,75 @@
+{
+  "version": "3.0.0",
+  "resources": [
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/query",
+      "@type": "SearchQueryService",
+      "comment": "Query endpoint of NuGet Search service"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/query",
+      "@type": "SearchQueryService/3.0.0-beta",
+      "comment": "Query endpoint of NuGet Search service"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/query",
+      "@type": "SearchQueryService/3.0.0-rc",
+      "comment": "Query endpoint of NuGet Search service"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/packages",
+      "@type": "PackageBaseAddress/3.0.0",
+      "comment": "Base URL of where NuGet packages are stored, in the format https://f.feedz.io/joel-verhagen/test-org/nuget/v3/packages/{id-lower}/{version-lower}"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget",
+      "@type": "PackagePublish/2.0.0",
+      "comment": "Push and delete (or unlist) packages."
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget",
+      "@type": "LegacyGallery",
+      "comment": "List command"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget",
+      "@type": "LegacyGallery/2.0.0",
+      "comment": "List command"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/symbols",
+      "@type": "SymbolPackagePublish/4.9.0",
+      "comment": "he gallery symbol publish endpoint."
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration/",
+      "@type": "RegistrationsBaseUrl",
+      "comment": "Base URL of where NuGet package registration info is stored"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration/",
+      "@type": "RegistrationsBaseUrl/3.0.0-rc",
+      "comment": "Base URL of where NuGet package registration info is stored"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration/",
+      "@type": "RegistrationsBaseUrl/3.0.0-beta",
+      "comment": "Base URL of where NuGet package registration info is stored"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration-gz/",
+      "@type": "RegistrationsBaseUrl/3.4.0",
+      "comment": "Package Info, gzipped, does not include SemVer 2.0.0 packages)"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration-gz-semver2/",
+      "@type": "RegistrationsBaseUrl/3.6.0",
+      "comment": "Package Info, gzipped"
+    },
+    {
+      "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration-gz-semver2/",
+      "@type": "RegistrationsBaseUrl/Versioned",
+      "comment": "Package Info, gzipped"
+    }
+  ]
+}
