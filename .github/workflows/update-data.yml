@@ -53,6 +53,11 @@ jobs:
         mkdir -p bagettest.azurewebsites.net/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://bagettest.azurewebsites.net/v3/index.json)
         echo "$content" | jq . > bagettest.azurewebsites.net/v3/index.json
+    - name: Check feedz.io
+      run: |-
+        mkdir -p f.feedz.io/joel-verhagen/test-org/nuget
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://f.feedz.io/joel-verhagen/test-org/nuget/index.json)
+        echo "$content" | jq . > f.feedz.io/joel-verhagen/test-org/nuget/index.json
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
