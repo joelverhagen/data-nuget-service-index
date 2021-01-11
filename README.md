@@ -21,9 +21,9 @@ and MyGet.
 
 [History](pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json) ([original endpoint](https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json))
 
-## MyGet nuget-build 
+## MyGet (test)
 
-[History](dotnet.myget.org/F/nuget-build/api/v3/index.json) ([original endpoint](https://dotnet.myget.org/F/nuget-build/api/v3/index.json))
+[History](www.myget.org/F/knapcode-nugetprotocol/api/v3/index.json) ([original endpoint](https://www.myget.org/F/knapcode-nugetprotocol/api/v3/index.json))
 
 ## BaGet (test)
 
