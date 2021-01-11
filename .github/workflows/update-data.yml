@@ -33,11 +33,11 @@ jobs:
         mkdir -p pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json)
         echo "$content" | jq . > pkgs.dev.azure.com/dnceng/public/_packaging/nuget-build/nuget/v3/index.json
-    - name: Check MyGet nuget-build
+    - name: Check MyGet
       run: |-
-        mkdir -p dotnet.myget.org/F/nuget-build/api/v3
-        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://dotnet.myget.org/F/nuget-build/api/v3/index.json)
-        echo "$content" | jq . > dotnet.myget.org/F/nuget-build/api/v3/index.json
+        mkdir -p www.myget.org/F/knapcode-nugetprotocol/api/v3
+        content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://www.myget.org/F/knapcode-nugetprotocol/api/v3/index.json)
+        echo "$content" | jq . > www.myget.org/F/knapcode-nugetprotocol/api/v3/index.json
     - name: Check GitHub joelverhagen
       run: |-
         mkdir -p nuget.pkg.github.com/joelverhagen
