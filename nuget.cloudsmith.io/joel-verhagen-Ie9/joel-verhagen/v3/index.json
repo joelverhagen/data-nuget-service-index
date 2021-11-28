@@ -15,7 +15,7 @@
       "@type": "LegacyGallery/2.0.0"
     },
     {
-      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3-flatcontainer/",
+      "@id": "https://dl.cloudsmith.io/public/joel-verhagen-Ie9/joel-verhagen/nuget",
       "@type": "PackageBaseAddress/3.0.0",
       "comment": "Base URL of where NuGet packages are stored, in the format {@id}{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
     },
