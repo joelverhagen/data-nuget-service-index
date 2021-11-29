@@ -58,6 +58,10 @@ jobs:
         mkdir -p f.feedz.io/joel-verhagen/test-org/nuget
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused https://f.feedz.io/joel-verhagen/test-org/nuget/index.json)
         echo "$content" | jq . > f.feedz.io/joel-verhagen/test-org/nuget/index.json
+    - name: Write current date
+      run: |-
+        content=$(date +%Y-%m-%d)
+        echo $content > latest-date.txt
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"

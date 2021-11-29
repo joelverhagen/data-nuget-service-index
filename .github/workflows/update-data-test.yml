@@ -31,6 +31,10 @@ jobs:
         mkdir -p nuget.pkg.github.com/joelverhagen
         content=$(curl --silent --show-error --fail --retry 5 --retry-connrefused --basic --user user:password https://nuget.pkg.github.com/joelverhagen/index.json)
         echo $content | jq . > nuget.pkg.github.com/joelverhagen/index.json
+    - name: Write current date
+      run: |-
+        content=$(date +%Y-%m-%d)
+        echo $content > latest-date.txt
     - name: Commit and push if data has changed
       run: |-
         git config user.name "Automated"
