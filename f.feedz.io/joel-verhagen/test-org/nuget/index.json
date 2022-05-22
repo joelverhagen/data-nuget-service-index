@@ -39,7 +39,7 @@
     {
       "@id": "https://f.feedz.io/joel-verhagen/test-org/symbols",
       "@type": "SymbolPackagePublish/4.9.0",
-      "comment": "he gallery symbol publish endpoint."
+      "comment": "The gallery symbol publish endpoint."
     },
     {
       "@id": "https://f.feedz.io/joel-verhagen/test-org/nuget/v3/registration/",
