@@ -55,6 +55,12 @@
       "comment": "Base URL of storage where NuGet package registration info is stored in GZIP format. This base URL includes SemVer 2.0.0 packages."
     },
     {
+      "@id": "https://nuget.cloudsmith.io/joel-verhagen-Ie9/joel-verhagen/v3/registration3-gz-semver2/",
+      "@type": "RegistrationsBaseUrl/Versioned",
+      "clientVersion": "4.3.0-alpha",
+      "comment": "Base URL of storage where NuGet package registration info is stored in GZIP format. This base URL includes SemVer 2.0.0 packages."
+    },
+    {
       "@id": "https://cloudsmith.io/~joel-verhagen-Ie9/repos/joel-verhagen/packages/detail/nuget/{id-lower}/{version-lower}/",
       "@type": "ReportAbuseUriTemplate/3.0.0",
       "comment": "URI template used by NuGet Client to construct abuse URL for packages"
