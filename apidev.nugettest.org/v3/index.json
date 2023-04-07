@@ -209,7 +209,7 @@
     },
     {
       "@id": "https://apidev.nugettest.org/v3/vulnerabilities/index.json",
-      "@type": "VulnerabilityInfo/6.6.0",
+      "@type": "VulnerabilityInfo/6.7.0",
       "comment": "The endpoint for discovering information about vulnerabilities of packages in this package source."
     },
     {
