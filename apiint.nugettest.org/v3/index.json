@@ -112,11 +112,6 @@
       "comment": "URI template used by NuGet Client to construct details URL for packages"
     },
     {
-      "@id": "https://int.nugettest.org/profiles/{owner}?_src=template",
-      "@type": "OwnerDetailsUriTemplate/6.11.0",
-      "comment": "URI template used by NuGet Client to construct owner URL for packages"
-    },
-    {
       "@id": "https://apiint.nugettest.org/v3/registration5-semver1/",
       "@type": "RegistrationsBaseUrl",
       "comment": "Base URL of Azure storage where NuGet package registration info is stored. This base URL does not include SemVer 2.0.0 packages."
