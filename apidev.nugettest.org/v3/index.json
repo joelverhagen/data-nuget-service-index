@@ -164,7 +164,7 @@
     },
     {
       "@id": "https://apidev.nugettest.org/v3/flatcontainer/",
-      "@type": "PackageBaseAddress/3.0.0",
+      "@type": "PackageBaseAddress/6.12.0",
       "comment": "Base URL of where NuGet packages are stored, in the format https://apidev.nugettest.org/v3/flatcontainer/{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
     },
     {
