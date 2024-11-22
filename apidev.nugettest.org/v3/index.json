@@ -169,7 +169,7 @@
     },
     {
       "@id": "https://apidev.nugettest.org/v3/flatcontainer/{lower_id}/{lower_version}/readme",
-      "@type": "ReadmeUriTemplate/6.12.0",
+      "@type": "ReadmeUriTemplate/6.13.0",
       "comment": "URI template used by NuGet Client to construct URL for downloading README files"
     },
     {
