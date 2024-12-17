@@ -1,5 +1,6 @@
 {
   "version": "3.0.0",
+  "#comment": "hello world",
   "resources": [
     {
       "@id": "https://azuresearch-usnc.dev.nugettest.org/",
@@ -163,8 +164,13 @@
     },
     {
       "@id": "https://apidev.nugettest.org/v3/flatcontainer/",
-      "@type": "PackageBaseAddress/3.0.0",
+      "@type": "PackageBaseAddress/6.12.0",
       "comment": "Base URL of where NuGet packages are stored, in the format https://apidev.nugettest.org/v3/flatcontainer/{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
+    },
+    {
+      "@id": "https://apidev.nugettest.org/v3/flatcontainer/{lower_id}/{lower_version}/readme",
+      "@type": "ReadmeUriTemplate/6.13.0",
+      "comment": "URI template used by NuGet Client to construct URL for downloading README files"
     },
     {
       "@id": "https://dev.nugettest.org/api/v2",
@@ -221,11 +227,6 @@
       "@id": "https://apidev.nugettest.org/v3/catalog0/index.json",
       "@type": "Catalog/3.0.0",
       "comment": "Index of the NuGet package catalog."
-    },
-    {
-      "@id": "https://apidev.nugettest.org/v3/flatcontainer/{lower_id}/{lower_version}/readme",
-      "@type": "ReadmeUriTemplate/6.13.0",
-      "comment": "URI template used by NuGet Client to construct a URL for downloading a package's README."
     }
   ],
   "@context": {
