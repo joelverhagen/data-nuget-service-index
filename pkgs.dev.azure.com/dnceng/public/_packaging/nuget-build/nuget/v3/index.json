@@ -36,10 +36,6 @@
       "@type": "PackageBaseAddress/3.0.0"
     },
     {
-      "@id": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/9d15d80a-6afc-4f7e-901b-9378146a4b8b/nuget/v3/vulnerabilities/index.json",
-      "@type": "VulnerabilityInfo/6.7.0"
-    },
-    {
       "@id": "https://pkgs.dev.azure.com/dnceng/",
       "@type": "VssBaseUrl"
     },
