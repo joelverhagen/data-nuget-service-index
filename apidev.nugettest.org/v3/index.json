@@ -162,9 +162,9 @@
       "comment": "URI template used by NuGet Client to construct display metadata for Packages using ID, Version."
     },
     {
-      "@id": "https://apidev.nugettest.org/v3/flatcontainer/",
+      "@id": "https://apidev.nugettest.org/v3-flatcontainer/",
       "@type": "PackageBaseAddress/3.0.0",
-      "comment": "Base URL of where NuGet packages are stored, in the format https://apidev.nugettest.org/v3/flatcontainer/{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
+      "comment": "Base URL of where NuGet packages are stored, in the format https://apidev.nugettest.org/v3-flatcontainer/{id-lower}/{version-lower}/{id-lower}.{version-lower}.nupkg"
     },
     {
       "@id": "https://dev.nugettest.org/api/v2",
@@ -223,7 +223,7 @@
       "comment": "Index of the NuGet package catalog."
     },
     {
-      "@id": "https://apidev.nugettest.org/v3/flatcontainer/{lower_id}/{lower_version}/readme",
+      "@id": "https://apidev.nugettest.org/v3-flatcontainer/{lower_id}/{lower_version}/readme",
       "@type": "ReadmeUriTemplate/6.13.0",
       "comment": "URI template used by NuGet Client to construct a URL for downloading a package's README."
     }
