@@ -182,6 +182,11 @@
       "comment": "Legacy gallery publish endpoint using the V2 protocol."
     },
     {
+      "@id": "https://dev.nugettest.org/api/v3/staging",
+      "@type": "PackageStaging/1.0.0",
+      "comment": "The gallery staging endpoint."
+    },
+    {
       "@id": "https://dev.nugettest.org/api/v2/symbolpackage",
       "@type": "SymbolPackagePublish/4.9.0",
       "comment": "The gallery symbol publish endpoint."
